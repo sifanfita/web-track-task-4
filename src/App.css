@@ -1,0 +1,130 @@
+/* Centering the app container */
+.app {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px auto;
+}
+
+/* General styling for the app title */
+.app h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Add Task Form styling */
+.add-task-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-task-button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.add-task-button:hover {
+  background-color: #218838;
+}
+
+/* Task List styling */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Task Item styling */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #f8f9fa;
+}
+
+.task-text {
+  cursor: pointer;
+}
+
+/* Completed task styling */
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Delete Task Button styling */
+.delete-task-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-task-button:hover {
+  background-color: #c82333;
+}
+
+/* Edit Task Form styling */
+.edit-task-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.save-task-button {
+  padding: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.save-task-button:hover {
+  background-color: #0056b3;
+}
+
+/* Add button styles for Edit */
+.edit-task-button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.edit-task-button:hover {
+  background-color: #e0a800;
+}
+
+.task-buttons {
+  display: flex;
+}
